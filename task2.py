@@ -17,9 +17,8 @@ assert multiplication(2,5) == [2, 4, 6, 8, 10]
 def multiplication(number , end = 12):
     for i in range(1,end+1):
      mulitples = i * number 
-     m2= [mulitples]
-     print (m2)
-    return m2
+     print (mulitples)
+    return
 
 
 if __name__ == "__main__":
