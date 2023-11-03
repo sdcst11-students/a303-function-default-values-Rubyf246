@@ -14,3 +14,23 @@ assert title() == "=========\n= Title =\n========="
 (2 points)
 
 """
+
+def title (symbol = "="):
+    s = ""
+    sd = "=========\n= Title =\n========="
+    if symbol != "=":
+        s += symbol*9
+        s += "\n"
+        s += symbol
+        s += " Title "
+        s += symbol
+        s += "\n"        
+        s += symbol*9
+    else:
+        s += sd
+   # print (s)    
+    return s       
+        
+if __name__ == "__main__":
+    assert title("*") == "*********\n* Title *\n*********"
+    assert title() == "=========\n= Title =\n========="

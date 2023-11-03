@@ -15,10 +15,14 @@ assert multiplication(2,5) == [2, 4, 6, 8, 10]
 """
 
 def multiplication(number , end = 12):
+    mulitples = []
     for i in range(1,end+1):
-     mulitples = i * number 
-     print (mulitples)
-    return
+     answer = i * number 
+     
+     mulitples.append (answer)
+ #   print (*mulitples, sep=", ")
+    
+    return mulitples
 
 
 if __name__ == "__main__":
